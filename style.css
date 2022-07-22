@@ -110,6 +110,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 40px;
 }
 
 .carousel-item {
@@ -303,12 +304,20 @@ body {
      text-decoration: underline;
  }
 
-@media screen and (min-width: 0px)  and (max-width: 360px) {
-
-    body {
-        background-image: linear-gradient(to left bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+@media (max-width: 460px){
+    .header__img {
+    display: none;
     }
 
-}
+    .header__menu--profile {
+    display: flex;
+    justify-content: center;
+    }
+
+    .input {
+    width: 89%;
+    height: 44px;
+    }
+} 
 
 
